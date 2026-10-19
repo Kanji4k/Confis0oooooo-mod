@@ -33,6 +33,7 @@ public class Config {
     public int accent = 0xFFFFFFFF;
     public int panelBg = 0xF2050505;
     public boolean clock24h = true;
+    public boolean nameBadge = true;
     public int mapZoom = 2;
     public List<Waypoint> waypointList = new ArrayList<>();
 
