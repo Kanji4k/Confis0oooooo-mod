@@ -2,6 +2,6 @@
   "required": false,
   "package": "client.confis.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": ["TpsMixin"],
+"client": ["TpsMixin", "NameBadgeMixin"],
   "injectors": { "defaultRequire": 0 }
 }
