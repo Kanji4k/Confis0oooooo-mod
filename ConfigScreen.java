@@ -455,7 +455,11 @@ public class ConfigScreen extends Screen {
             cfg.panelBg = 0xF2050505;
             Config.save();
         }
-
+by += 18;
+if (button(g, lx, by, w, 14, "Name badge (C): " + (cfg.nameBadge ? "ON" : "OFF"), BTN, BTN_TXT)) {
+    cfg.nameBadge = !cfg.nameBadge;
+    Config.save();
+}
         // name at the bottom right of the settings page
         Component name = Component.literal(ConfisClient.NAME).withStyle(ChatFormatting.BOLD);
         g.drawString(this.font, name, px + pw - 8 - this.font.width(name), py + ph - 14, opaque(cfg.accent), true);
